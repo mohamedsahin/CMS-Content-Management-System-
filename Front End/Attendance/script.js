@@ -12,18 +12,18 @@ change.addEventListener("click",cls);
 Wafer.style.visibility="hidden";
 menu.style.display="none";
 var choice=null;
-for(i=0;i<Input.length;i++)
+for(let i=0;i<Input.length;i++)
 {
     Input[i].addEventListener("click",enable);
 }
 function enable()
 {
-    for(i=0;i<Input.length;i++){
+    for(let i=0;i<Input.length;i++){
         Input[i].disabled=true;
 }
     this.disabled=false;
     choice=this.innerHTML;
-    for(i=0;i<Output.length;i++){
+    for(let i=0;i<Output.length;i++){
        Output[i].disabled=false;
 }}
 function visible(){
@@ -37,10 +37,10 @@ function popup(){
     document.getElementById('p').innerHTML="STATUS: "+ choice;
 }
 function cls(){
-    for (i=0;i<Input.length;i++){
+    for (let i=0;i<Input.length;i++){
         Input[i].disabled=false;
     }
-   for (i=0;i<Output.length;i++){
+   for (let i=0;i<Output.length;i++){
        Output[i].disabled=true;
     }
     Wafer.style.visibility="hidden";
