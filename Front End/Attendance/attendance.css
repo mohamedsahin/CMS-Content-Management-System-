@@ -94,6 +94,7 @@ div[class="Menu"]>button{
     top:30%;
     width:25%;
     min-height:20vh;
+    visibility:hidden;
 }
 #popup>button{
     border:2px orangered solid;
